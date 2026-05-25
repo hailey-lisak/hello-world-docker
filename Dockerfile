@@ -19,3 +19,32 @@ COPY . .
 #So when you run "docker run hello-world-docker",
 #Docker will start the container, run python3 app.py, and your Python code executes.
 CMD ["python3", "app.py"]
+
+
+
+#Docker images shows saved templates; it's like a blueprint
+#Container is the actively running environment
+
+#Visual Flow:
+#Your files
+#(app.py, Dockerfile)
+#        ↓
+
+#docker build
+#        ↓
+
+#Docker Image
+#(saved template)
+#        ↓
+
+#docker run
+#        ↓
+
+#Container
+#(running mini-computer)
+#        ↓
+
+#Runs:
+#python3 app.py
+
+#Docker is primarily about packaging environments consistently
