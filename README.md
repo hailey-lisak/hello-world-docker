@@ -7,4 +7,5 @@ Docker
 
 ## How to run
 '''bash 
-docker built -t hello-world-docker
+docker build -t hello-world-docker .
+docker run hello-world-docker
